@@ -1,0 +1,5 @@
+packages:
+  # Wildcard patterns
+  - "packages/*"
+  - "apps/*"
+  - "docs"

@@ -1,0 +1,24 @@
+{
+  "name": "anyspend-demo-new",
+  "packageManager": "pnpm@10.14.0",
+  "scripts": {
+    "prettier:check": "npx prettier \"**/*.{ts,tsx,js,jsx,mjs,cjs,json}\" --check",
+    "prettier:write": "npx prettier \"**/*.{ts,tsx,js,jsx,mjs,cjs,json}\" --write",
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "anyspend-demo-vite:dev": "pnpm --filter anyspend-demo-vite run dev",
+    "anyspend-demo-vite:build": "pnpm --filter anyspend-demo-vite run build"
+  },
+  "engines": {
+    "node": ">= 20.15.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "turbo": "^2.5.6"
+  }
+}
