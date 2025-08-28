@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@b3dotfun/sdk": "0.0.31",
+    "@b3dotfun/sdk": "0.0.33",
     "@tanstack/react-query": "^5.85.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",

@@ -37,6 +37,25 @@ export default function HomePage() {
           <p className="mb-12 text-center text-gray-500">Experience seamless crypto transactions</p>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <button
+              onClick={() => {
+                setB3ModalOpen(true);
+                setB3ModalContentType({
+                  type: "anySpend",
+                  defaultActiveTab: "fiat",
+                  destinationTokenAddress: USDC_BASE.address,
+                  destinationTokenChainId: USDC_BASE.chainId,
+                });
+              }}
+              className="group flex h-40 flex-col justify-between overflow-hidden rounded-lg border border-gray-100 bg-white p-6 text-left shadow-sm transition-all hover:border-blue-100 hover:shadow-md"
+            >
+              <div>
+                <h3 className="text-lg font-medium text-gray-900">Onramp to USDC (Base)</h3>
+                <p className="mt-1 text-sm text-gray-500">Use credit card to buy USDC on Base</p>
+              </div>
+            </button>
+
+
             <button
               onClick={() => {
                 setB3ModalOpen(true);
